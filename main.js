@@ -7,15 +7,12 @@ const prompt = require('prompt-sync')();
 
 const AUTHORS = ["Chad", "Kyle"];
 
-// Define the readArticle function
 function readArticle(title, text, imageRef) {
   // This function will do something with the provided data
-  // but the implementation is not shown here
 }
 
-// Define the readUserData function
 function readUserData(articleList) {
-  // This function will read user data and return an object with the relevant fields
+  // read user data and return an object with the relevant fields
     if (!fs.existsSync('input.json')) return;
     console.log("reading input");
     let data = fs.readFileSync('input.json');
@@ -40,7 +37,7 @@ function readUserData(articleList) {
 }
 
 const ABSOLUTE_LINK = "https://unicyclegurus.com";
-// Create an array to hold the data for each article
+// holds the data for each article
 var articlesData = [];
 const inputArticlesData = [];
 
